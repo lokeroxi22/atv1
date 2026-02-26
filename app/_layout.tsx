@@ -60,7 +60,13 @@ export default function RootLayout() {
 
               
 
-			         <View> <TextInput></TextInput></View>
+			         <View><TextInput
+        style={styles.principal}
+        placeholder="Ex: 10"
+        keyboardType="numeric"    
+          
+        value={n1}               
+      /></View>
                <View style={styles.linha}>
                 
 			<TouchableOpacity style={styles.botao} onPress={calculo}>
@@ -95,14 +101,14 @@ botao: {
     backgroundColor: '#A9A9A9 ',
    
     
-    width: 50,          // Largura pequena
-    height: 50,         // Altura igual à largura para ser um quadrado
-    borderRadius: 0,    // Borda totalmente quadrada
+    width: 50,          
+    height: 50,         
+    borderRadius: 0,    
     justifyContent: 'center',
     alignItems: 'center',
-    alignSelf: 'center', // Centraliza o quadrado na tela
+    alignSelf: 'center', 
     margin: 10,     
-	     // Espaço em volta dele
+	     
   },
   
  
